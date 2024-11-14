@@ -6,7 +6,7 @@ authors = ["devjunhong <unique3801@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.11"
 
 [tool.poetry.group.dev.dependencies]
 google-cloud-storage = "^2.18.2"
