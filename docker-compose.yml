@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    command: ["./wait-for-it.sh", "gcs:9023", "--timeout=30", "--", "poetry", "run", "python", "-m", "main"]
+  gcs:
+    image: oittaa/gcp-storage-emulator:latest
+    command: ["start","--host", "gcs", "--p", "9023", "--default-bucket", "test-bucket"]
+
+
+
